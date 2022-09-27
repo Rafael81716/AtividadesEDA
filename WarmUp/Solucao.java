@@ -1,7 +1,7 @@
 package WarmUp;
 import java.util.Scanner;
 
-class Main{
+public class Solucao{
     public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
         int multiplier = sc.nextInt();
@@ -22,7 +22,11 @@ class Main{
         
         String output = "";
         for(int i = 0; i < finalValues.length; i++){
-            output += finalValues[i] + " ";
+            if(i == finalValues.length - 1){
+                output += finalValues[i] + "\n";
+            }else{
+                output += finalValues[i] + " ";
+            }
         }
 
         System.out.println(output);
