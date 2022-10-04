@@ -13,5 +13,6 @@ class Solucao{
         }
 
         System.out.println(output.trim());
+        sc.close();
     }
 }
