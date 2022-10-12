@@ -18,12 +18,11 @@ public class Solucao {
     }
 
     public static String locateNegative(int[] numbers, int position){
-        String output = "";
 
         if(numbers[position] < 0){
-            return output = numbers[position] + "";
+            return numbers[position] + "";
         }else if(numbers.length - 1 == position){
-            return output = "-";
+            return "-";
         }else{
             position++;
             return locateNegative(numbers, position);
